@@ -192,6 +192,45 @@ html {
             transform: rotate(45deg);
         }
     }
+
+    &.sticky {
+        position: sticky;
+        height: calc(var(--nav-bar-height) * 0.85);
+        top: calc(var(--nav-bar-height) + 2rem);
+
+        margin-bottom: 5rem;
+
+        background-color: rgb(170, 163, 163);
+
+        z-index: 3;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        text-transform: uppercase;
+        font-weight: 700;
+
+        padding-inline-start: 0.5rem;
+        padding-inline-end: 1.5rem;
+
+        .sticky-left {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 0.5rem;
+
+            .placeholder-image {
+                width: 3.25rem;
+                height: 2rem;
+                background-color: white;
+            }
+        }
+
+        .text {
+            font-size: 0.75rem;
+        }
+    }
 }
 
 /* Hero Section */
